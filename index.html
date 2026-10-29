@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Assignments</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #222;
+      padding: 40px 20px;
+    }
+    h1 { text-align: center; margin-bottom: 8px; }
+    p.sub { text-align: center; color: #666; margin-bottom: 30px; }
+    .grid {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      display: block;
+      background: #fff;
+      padding: 28px 16px;
+      text-align: center;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #222;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+      background: #2563eb;
+      color: #fff;
+    }
+    .card span { display: block; font-size: 12px; font-weight: normal; margin-top: 6px; opacity: 0.7; }
+  </style>
+</head>
+<body>
+  <h1>My Assignments</h1>
+  <p class="sub">Click an assignment to download it</p>
+
+  <div class="grid">
+    <a class="card" href="Ass1.ipynb" download>Assignment 1<span>Click to download</span></a>
+    <a class="card" href="Ass2.ipynb" download>Assignment 2<span>Click to download</span></a>
+    <a class="card" href="Ass%203.ipynb" download>Assignment 3<span>Click to download</span></a>
+    <a class="card" href="Ass%204.ipynb" download>Assignment 4<span>Click to download</span></a>
+    <a class="card" href="Ass%205.ipynb" download>Assignment 5<span>Click to download</span></a>
+    <a class="card" href="Ass6.ipynb" download>Assignment 6<span>Click to download</span></a>
+    <a class="card" href="Ass8.ipynb" download>Assignment 8<span>Click to download</span></a>
+    <a class="card" href="Ass%209.ipynb" download>Assignment 9<span>Click to download</span></a>
+  </div>
+</body>
+</html>
